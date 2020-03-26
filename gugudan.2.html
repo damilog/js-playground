@@ -2,20 +2,17 @@
 <html>
 <body>
     <h2>구구단2, 3단 화면 출력</h2>
-    <script>
-     let num2=2;
-     let num3=3;
-     let result2, result3 = 1;
+    <input type="text" id = "num"><br>
+    <button onclick="RunGugudan()">Run</button>
 
-    for (i=1; i<10; i++){
-        let result2 = num2 * i;
-        document.write(`2*${i}=${result2}<br>`);;
-    }
-    
-    for (i=1; i<10; i++){
-        let result3 = num3 * i;
-        document.write(`3*${i}=${result3}<br>`);
-    }
+    <script>
+            function RunGugudan(){
+                let StrInput = document.getElementById("num").value;
+                let NumInput = Number(StrInput);
+                 for (i=1; i<=9; i++){
+                    document.write(`${NumInput}*${i}=${result}<br>`);
+                    }
+                }
     </script>
 </body>
 </html>
