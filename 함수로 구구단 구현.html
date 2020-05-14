@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+구구단 계산 결과를 배열에 담는 로직을 새로운 함수로 분리한다.
+배열에 담은 데이터를 화면에 출력하는 로직을 새로운 함수로 분리한다.
+
+    <script>
+          // 계산 결과를 배열에 저장
+
+        function calculrate(num) {            
+            const results = [];
+             for (i = 1; i <= 9; i++) { 
+                 results[i]= num * i; 
+                 }
+                  console.log(results[i]);
+                  }
+
+      /*function print(results) {
+          for(j=1; j<=9; j++ ) {
+            document.write(`<br>${results[j]}<br>`);
+          }
+         */
+    // 계산 결과를 화면에 출력
+
+function main() {
+    // 나머지 코드들은 여기에 
+    calculrate(4);
+    print(4);
+}
+main();
+
+    </script>
+    
+</body>
+</html>

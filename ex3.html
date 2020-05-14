@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h3>연습문제 3</h3>
+소수 출력하기
+1 - 10000 사이의 소수를 화면에 출력하는 프로그램을 작성해 봅시다.
+HTML + JS로 작성할 것
+객체와 메소드를 사용해 볼 것
+최대한 예쁘게 만들어 볼 것
+    <script>
+        const numbers = {};/*객체 */
+        numbers.all = []; /*객체 속성으로 배열넣음*/
+        numbers.prime = [];
+
+        numbers.isPrime = function(number){
+            for(i=2; i < number;i++){
+                if(number%i ==0){
+                    return false;
+                }
+            }
+            return true;
+            } /*소수 판별*/
+        };
+
+        numbers.addPrime = function(number){
+            if isPrime()===true{
+                prime.push(number);
+            }
+        }; /*해당하는 숫자를 prime 에 추가*/
+        const numbers.getAllPrimes = function(); /*찾아낸 모는 소수를 문자열로 바꿔서  retur*/
+        const numbers.addAll = function(max_num);/*2부터 max까지 all에 넣음*/
+    </script>
+</body>
+</html>
